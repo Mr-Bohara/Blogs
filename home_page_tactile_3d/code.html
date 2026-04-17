@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CURATOR - Tactile Luxury Travel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#dfe3e7",
+                        "on-primary-fixed-variant": "#065043",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#3f4945",
+                        "on-secondary-fixed": "#171c1f",
+                        "primary": "#00342b",
+                        "on-tertiary-fixed": "#370e04",
+                        "on-secondary-fixed-variant": "#43474b",
+                        "primary-fixed-dim": "#94d3c1",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary": "#4e2013",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#6d382a",
+                        "on-primary-fixed": "#00201a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "primary-container": "#004d40",
+                        "surface-container-low": "#f3f3f3",
+                        "tertiary-fixed-dim": "#ffb5a1",
+                        "secondary-fixed-dim": "#c3c7cb",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#e89f8c",
+                        "on-secondary-container": "#5e6367",
+                        "outline": "#707975",
+                        "surface": "#f9f9f9",
+                        "outline-variant": "#bfc9c4",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary": "#5a5f62",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#693527",
+                        "primary-fixed": "#afefdd",
+                        "on-background": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "secondary-container": "#dce0e4",
+                        "on-primary-container": "#7ebdac",
+                        "surface-tint": "#29695b",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#94d3c1",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed": "#ffdbd1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .inner-shadow-recessed {
+            box-shadow: inset 0 4px 8px rgba(0, 32, 26, 0.1), inset 0 -2px 4px rgba(255, 255, 255, 0.5);
+        }
+        .atmospheric-shadow {
+            box-shadow: 0 20px 40px rgba(0, 32, 26, 0.08);
+        }
+        .glass-blur {
+            backdrop-filter: blur(32px);
+            -webkit-backdrop-filter: blur(32px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_20px_40px_rgba(0,32,26,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-emerald-900 dark:text-emerald-50 hover:bg-emerald-100/50 dark:hover:bg-emerald-800/50 transition-all duration-300 p-2 rounded-full active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-black tracking-tighter text-emerald-900 dark:text-emerald-50 font-['Plus_Jakarta_Sans']">CURATOR</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-emerald-900 dark:text-emerald-50 font-bold font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Explore</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-900 dark:hover:text-emerald-50 font-['Plus_Jakarta_Sans'] font-medium transition-colors" href="#">Journals</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:text-emerald-900 dark:hover:text-emerald-50 font-['Plus_Jakarta_Sans'] font-medium transition-colors" href="#">Destinations</a>
+</nav>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-high border-2 border-primary-fixed overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a professional man with a friendly expression in a modern bright environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_DNDhUmMxaziIqrsb8_66i2SCubREU_gH85dSVRFFWH4HcQ_bDBxmpXSwiyv4YylAhUUt2t5V4dTnUR8jtGeiLP_t6o-GrakemKl7lxESyCrgxtpxILtySsVud2vs1Jgw6KC466224VPI3Xh2dX_cK7lniYhRpVyoaljTfv_nsquBPkbhHYPrXsg6Yrpok3-9O8eCtwMnaUNqrDUZX9AoWDKmA6Z-PFqD8Ee4xP6dDoxBu6co4vIyTMUci6rWyEiZe8mUxKGQg_ML"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section: The Curated Monolith -->
+<section class="px-6 md:px-12 mb-20 relative overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 z-10">
+<span class="text-on-surface-variant font-label uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Summer Series 2024</span>
+<h2 class="text-6xl md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8">
+                        The Art of <br/><span class="text-primary-container">Being Elsewhere.</span>
+</h2>
+<!-- Search Bar: Recessed Tray -->
+<div class="relative w-full max-w-lg mb-8">
+<div class="bg-surface-container-low inner-shadow-recessed rounded-xl flex items-center p-2 focus-within:bg-surface-container-lowest transition-colors group">
+<span class="material-symbols-outlined text-outline ml-4" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder:text-outline-variant font-medium py-3 px-4" placeholder="Where should we curate your escape?" type="text"/>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-3 rounded-full font-bold shadow-lg hover:-translate-y-0.5 transition-transform">
+                                Curate
+                            </button>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex -space-x-3">
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="portrait of a traveler smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt6R9vnntfMo9BpMvWTWRQEwUgujSY2eLL0_AN0eP6Kw2LvILO0vaqrp9cyW3q0k6_VJMVHLthYCUiLShohqbEl8huydab_QfuY5S0-REzoVLfOfvU9eq_fmEsuI_D6RD_VX12db6bhyYUW7XprAXT-qS5pskrq98iUaSdJ5OvwSXypFz6JrVGLTenX-b3zId-SoFynonOH_xfVPo3svXcgT6JBrt5WJAi0BriThy26fGWJE1zXMa5UiOdcdnQdlmoFhDPretnaohj"/>
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="portrait of a happy woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA69I1iocNGmJa1gZCe1xx7brCafCrqjE3y3HlE5C5kKkHMxnTAQWlGSRvnO9JOsM7Xvl76dFwju7GrzcWQZ8OxOfpo0mcAG3Xb8D6uSYXAsdMgA6R9t9WIbHbfl3x-CsXlWD9O_7VQACMDmI-GXb6L8ZVpZ-D7ddkbg2jtYh7qj9bqn-HgPNPw2fjoKF87GmRDV9EaiaxvpI5Fe3_Hz2wZ0Fl7uf6xFrRbMwrmyaa5Du7yhw3H-KdmsEt1DgzSrabfywCD4yFfeXN1"/>
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="portrait of a man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdcQReRF1pSo-GXUq7ZpUh_EssmnvS6WRT6KV9BacCo4uyzJea01VF3AhroQM2GLCttESZGU4dccvFTZf6E05ls95CHZWwAXSFmrwfmaAFt_0tHVsEjWzHeBXmmq2QX-Kq4sMzAtjGOWQbPe0fGHdKafFUtNZuwMs98ANdLg2TFvcik3eqnbnUQRCWQ4jHzvGSIF6mTI_D-HncKUqT9N3biLp1A7Gtcgvz49ZRvZ-jz5g9oI0wtiNmAxxBJJA_JXSmPQG7tJ-EkqQv"/>
+</div>
+<p class="text-on-surface-variant text-sm font-medium self-center">Joined by 12k+ curators worldwide</p>
+</div>
+</div>
+<!-- 3D Hero Visuals -->
+<div class="w-full md:w-1/2 relative h-[500px]">
+<div class="absolute top-0 right-0 w-4/5 h-4/5 bg-surface-container-low rounded-lg rotate-3 z-0"></div>
+<div class="absolute top-10 right-10 w-4/5 h-4/5 overflow-hidden rounded-lg atmospheric-shadow -rotate-2 z-10">
+<img alt="Luxury Coastal" class="w-full h-full object-cover" data-alt="Breathtaking aerial view of a private luxury villa overlooking a turquoise Mediterranean bay at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV8w5vBng9KsmFspooxTQJO0h_kTsLVo23R-lPI-7g-iJbdKhG4TKAPcTuQjVvTVQWLu-wJcMV8VHBdLf5w9z5bp--CmX_F68Js5lXOw5rOj11J9jdEEsiCf9mf1BJtT_CHiL-jpuwIAwP7hl6mjWAZNTmzppUL3_NXx_mAQinRFwgIrQ2S0IKqiXNmQwzTFZhlocH1O0Vj-EsezMfxsYpnZ2csjMU0IC3fjabzFdWLfAMVwLpvz5N0PAJ3jWY75m68yW3I5KN304O"/>
+</div>
+<div class="absolute bottom-4 left-0 bg-surface-container-lowest p-6 rounded-lg atmospheric-shadow z-20 max-w-xs border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-on-surface font-bold text-lg leading-tight mb-1">Amalfi Coast, Italy</p>
+<p class="text-on-surface-variant text-sm">"The light here is unlike anything I've ever seen."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Places: High-Depth Cards -->
+<section class="px-6 md:px-12 py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h3 class="text-4xl font-black text-primary tracking-tight mb-2">Featured Escapes</h3>
+<p class="text-on-surface-variant max-w-md">Hand-selected destinations that redefine the meaning of luxury and solitude.</p>
+</div>
+<button class="bg-surface-container-highest text-primary px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+                        View All
+                    </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-lowest rounded-lg p-4 atmospheric-shadow group-hover:-translate-y-4 transition-transform duration-500 overflow-hidden">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-6 relative">
+<img alt="Maldives" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Crystal clear water and an overwater bungalow deck with a private infinity pool in the Maldives" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi7xyZPhrg0BowCAAng9yoHsw1mDZqO7wJDYyRjl1h99fRNQZC9XINLJsHOUekwDNJqlCKy4tBDjXEVEasHIJlFoGAVH_2_vLc69LHPvsWWVZbBwtx5uAvm-raz3gdlSmg6D2yTCTWY-SQuTWDlM7AVqAAZVFGulz0Bi4RPQROy49geFjP_XItagyaUZv6jBAF-cggQvl9dKfM7-2J9ZZbkCBqe3HUVlP_wosgAFnuotc7q69E3hpzo5RMuh4U5ZJQZ1cd5IQRJQFp"/>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase tracking-widest">Tropical</div>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold text-primary">Soneva Jani</h4>
+<p class="text-primary font-bold">$2,400<span class="text-on-surface-variant font-normal text-sm">/nt</span></p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-4">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+                                    Medhufaru, Maldives
+                                </div>
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Luxury</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Private</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer translate-y-8 md:translate-y-12">
+<div class="relative bg-surface-container-lowest rounded-lg p-4 atmospheric-shadow group-hover:-translate-y-4 transition-transform duration-500 overflow-hidden">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-6 relative">
+<img alt="Swiss Alps" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern geometric wood and glass hotel nestled in the snow-covered Swiss Alps during twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEUDXncaJxIswAC29Yg1dzq_f-ekTj1oSsGiFy4Q5iG_8iIEvPE1AP1cf1lHNSCLq10a_tlJf3_xC_pbo8PP-8KUOpfaxFQW7AJQ7HQCJz7_mIISNub1IGoW_tJf0gZVPH39JVvR06jnRwrQfWLRVQVBhRVdbuqRmzykRWCkkpydG9B_jFKnVPWXq4X86yApiWnN0zSsMkD165MAHJYEt5mt5zH70FdtxvwS6JlceSeEscwEpFf43BFMkNCxfq_eD7r7x-zbHl2Wm7"/>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase tracking-widest">Alpine</div>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold text-primary">The Chedi</h4>
+<p class="text-primary font-bold">$1,150<span class="text-on-surface-variant font-normal text-sm">/nt</span></p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-4">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+                                    Andermatt, Switzerland
+                                </div>
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Wellness</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Ski</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-lowest rounded-lg p-4 atmospheric-shadow group-hover:-translate-y-4 transition-transform duration-500 overflow-hidden">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-6 relative">
+<img alt="Kyoto" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist traditional Japanese ryokan interior with sliding shoji screens looking out onto a mossy Zen garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdvs0-qgn1eFF_g2j3DU8iT38knQINibJqYASxBy6uiBz7-ViIPZDKJsO1mYdGGby8Hn-ttb1GZ4BCGQ3GY8vYYrbf4UX1b9N7anadOW8YxV-2zPv2lsFGKHhS9B_L1poELkgE1GGERqibpqRy4JFYFYkrPidgxZ8xEi5ReuN6JMkVI2xUnTXzqqwvy99TC_ORRzN1UtvezXCBOgXTBzicU8ttcytSqUxUOiw0sQHzS5HDEOlTK9BpruywvzSwJe6JtW9s-AWWrBY_"/>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase tracking-widest">Heritage</div>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold text-primary">Hoshinoya</h4>
+<p class="text-primary font-bold">$980<span class="text-on-surface-variant font-normal text-sm">/nt</span></p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-4">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+                                    Kyoto, Japan
+                                </div>
+<div class="flex gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Culture</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Zen</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Journals: Editorial Style -->
+<section class="px-6 md:px-12 py-32 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-4 md:sticky md:top-32">
+<span class="text-on-surface-variant font-label uppercase tracking-[0.2em] text-xs font-bold mb-4 block">The Weekly Digest</span>
+<h3 class="text-5xl font-black text-primary tracking-tighter leading-none mb-8">Latest <br/>Journals</h3>
+<p class="text-on-surface-variant mb-10 leading-relaxed">Stories of travel, culture, and architecture curated from our global network of explorers.</p>
+<a class="inline-flex items-center gap-4 text-primary font-bold border-b-2 border-primary pb-1 group" href="#">
+                            Explore Archive
+                            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-8 flex flex-col gap-24">
+<!-- Journal Entry 1 -->
+<article class="flex flex-col md:flex-row gap-10 items-center">
+<div class="w-full md:w-1/2 aspect-square rounded-lg overflow-hidden atmospheric-shadow">
+<img alt="Desert Oasis" class="w-full h-full object-cover" data-alt="Dramatic high contrast image of a modern concrete architectural structure in the middle of a vast desert dunescape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw2r2veDAXYmWqyFHLPkPs-cyW1wdfYg9-MpCk1UPsEbH8lczlLuMQrJHPQT9ML1f4J4uyipGkxa5m_Ew30hQYS7fuL6acDMKaes4niF3_I_1WcIotjyNWjEYoCt_wll-6eZzoIPC_HO4AcPL39awRGtNe05Wxr-ENAHNo4SS4wxC8L_jCBhO25GbXARWbXuOQu_eWcR0d8-jTV5IkIu53dATcY1wdUsm60PwMLuJViiASbjPjkp7S7dePrW6fiCxuDrStoFpxR1EX"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-4 block">Architecture • 8 min read</span>
+<h4 class="text-3xl font-bold text-primary mb-4 tracking-tight leading-tight">The Brutalist Oasis of the Sahara</h4>
+<p class="text-on-surface-variant mb-6 line-clamp-3">How a new wave of architects is using raw materials to create sustainable luxury in the harshest climates on earth.</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img data-alt="Portrait of the author" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuykcM7dKeszmyeMflYV4leYR_MNGb0wlUpfPnVvtSfF-r52Kco3x0cT-aEH0UfmPbd5-8bTo6Q9bD1iWyTYt-xSGqQERui-iWNkfL3LU9YGA0S5PBzDCA5Pp8rV_zvZi82sdkxmgoHvxr9iLigyZvA40boGoJZa4Y_zuVcrRTF90sNdrXpVaT1zIg8N6vJKWbXwQlS_WMA0OZE8cUmIRvYr7NzTIXzz2OU813PFqqd09B5cbweGWHo9cPJJIXkxwJvK_NoMlBlb8q"/>
+</div>
+<span class="text-sm font-bold text-on-surface">By Julian Vossen</span>
+</div>
+</div>
+</article>
+<!-- Journal Entry 2 -->
+<article class="flex flex-col md:flex-row-reverse gap-10 items-center">
+<div class="w-full md:w-1/2 aspect-square rounded-lg overflow-hidden atmospheric-shadow">
+<img alt="Japanese Garden" class="w-full h-full object-cover" data-alt="Top-down view of steam rising from a traditional stone onsen bath surrounded by lush green ferns and bamboo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsidF_KS40Kd3jkDGISNwCs6pAms79kgeSkZ0rqTOaY-1zMpv3_1olYRRLFMT5O5GuLx3gldMin06dje89xPGZK6cRHJOlwSD-rkbYjoYYLWiGiwB6fVd7o7YhOMTBkSwpvnN2yDc0hdYVPyHRuiIfLxx1gatfLK-2UWo4iIq8SQsXa6yYsIyDL1Eirv8gQnT1WNoUxfPOvrqORo_wZ8xkhp886Latz-8INWffyFias6HoZz4YC-qTQQEdL918H4Mtd8qavPv_qFLW"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary-container font-bold text-xs uppercase tracking-widest mb-4 block">Tradition • 12 min read</span>
+<h4 class="text-3xl font-bold text-primary mb-4 tracking-tight leading-tight">The Silence of the Onsen</h4>
+<p class="text-on-surface-variant mb-6 line-clamp-3">Uncovering the ancient rituals of Japanese bathing and why true luxury often sounds like absolutely nothing.</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img data-alt="Portrait of the author" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDht-iFvXGIeoXd3bNWhMfd2G-MXrO80mdxKbQAg5JxK4yTRXNjSBQ8U6jgJr4l_zJ1LGxw88qM3ka4fOJZa_HmXe492oqUIr7g5M0csjRIlmGq9CSHEoaZ-K8Gd6IY0QaXw32W4knBshBlvd6pFHeXARLwZUpJEy5dz_4LzD3eb2_aI_Riq5usTQzuA3FPiV7upBJ7_ojZzSB0x5acrnsliieyBT6MzTx_daqWLL0CiKCxCTLYbvQ9zuMV0SBUlE6bGmqJYlPa89lU"/>
+</div>
+<span class="text-sm font-bold text-on-surface">By Elena Moretti</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center">
+<div class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl w-[90%] max-w-md rounded-full px-6 py-3 flex justify-around items-center shadow-[0_20px_40px_rgba(0,32,26,0.15)]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-emerald-900 to-emerald-700 dark:from-emerald-600 dark:to-emerald-400 text-white rounded-full px-5 py-2.5 shadow-lg scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Journals</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Create</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

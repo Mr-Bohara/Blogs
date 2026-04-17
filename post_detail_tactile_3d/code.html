@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#dfe3e7",
+                    "on-primary-fixed-variant": "#065043",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1a1c1c",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#3f4945",
+                    "on-secondary-fixed": "#171c1f",
+                    "primary": "#00342b",
+                    "on-tertiary-fixed": "#370e04",
+                    "on-secondary-fixed-variant": "#43474b",
+                    "primary-fixed-dim": "#94d3c1",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary": "#4e2013",
+                    "background": "#f9f9f9",
+                    "on-tertiary-fixed-variant": "#6d382a",
+                    "on-primary-fixed": "#00201a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#004d40",
+                    "surface-container-low": "#f3f3f3",
+                    "tertiary-fixed-dim": "#ffb5a1",
+                    "secondary-fixed-dim": "#c3c7cb",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#e89f8c",
+                    "on-secondary-container": "#5e6367",
+                    "outline": "#707975",
+                    "surface": "#f9f9f9",
+                    "outline-variant": "#bfc9c4",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary": "#5a5f62",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-container": "#693527",
+                    "primary-fixed": "#afefdd",
+                    "on-background": "#1a1c1c",
+                    "inverse-surface": "#2f3131",
+                    "secondary-container": "#dce0e4",
+                    "on-primary-container": "#7ebdac",
+                    "surface-tint": "#29695b",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#94d3c1",
+                    "surface-dim": "#dadada",
+                    "tertiary-fixed": "#ffdbd1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(249, 249, 249, 0.7);
+            backdrop-filter: blur(32px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_20px_40px_rgba(0,32,26,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-emerald-900 dark:text-emerald-50 hover:bg-emerald-100/50 dark:hover:bg-emerald-800/50 transition-all duration-300 p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<span class="text-xl font-black tracking-tighter text-emerald-900 dark:text-emerald-50 font-['Plus_Jakarta_Sans']">CURATOR</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed shadow-sm">
+<img alt="User Profile" data-alt="close-up portrait of a professional woman with a friendly expression in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARU24mTQuj72rqhEd85tWtLsI6bFmDk_Lg7WFqXJkaLnGGvbYTqXhYzxEHKFRXpLKX5fSSjiM8BCQhGmVZVHNZybVoghJ4Hj_US7RKbXkJE5eLnZan1D9lZ6qdMqgUmGMdLhvTiJ7caIolBZXnldF4BwORP5JI8MjqbaOIU9pqeOfM77EXCJb2KwhmY8I_QIg1J4dHq9aJ6hqckp0KxXqkpEBOstBd_XTEF3vfE3GvQwSlatEdMgaj8owO5Wd9Gsr6k76dW6lBm9-6"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 max-w-5xl mx-auto px-6">
+<!-- Editorial Hero Section -->
+<article class="relative">
+<header class="mb-16 mt-12 relative z-10">
+<div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-container text-on-secondary-container text-[11px] font-bold tracking-[0.15em] uppercase">
+                    Destinations • Tuscany
+                </div>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-primary leading-[0.95] mb-8 max-w-3xl">
+                    The Silent Rhythms of Val d'Orcia
+                </h1>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-lowest shadow-[0_20px_40px_rgba(0,32,26,0.04)] w-fit">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a male travel writer with glasses in an outdoor setting with warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOaTcTpe0y0mJ8D2L_ncwbnVra3IhpxoN3xa0tD6zv7_JSz-detJ_WCjjlIWBZHTsXI4bOEhZl8b4Y5izuW7wtEpRb4RnravoP_6vZKzQ9JzbuJI1aSmVAMFHLRt15TVvu9jHKBxntUEr1TpHAF-Ouby8lCdyhqpuMDRU0z2FDfscbpT9rqk55VLvYKe2L9XyWpmC_7rHtE18HCLD_HA70l9KTBLEp-iFPiIXPZgAdR4jR6xjEigFEZHNUBagFfED9N-ip9VTazcm"/>
+<div>
+<p class="text-sm font-bold text-on-surface">Elena Rossi</p>
+<p class="text-xs text-on-surface-variant font-medium">Published Oct 24, 2023 • 12 min read</p>
+</div>
+</div>
+</header>
+<!-- Main Content with Layered Layout -->
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-8 space-y-8">
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-light italic">
+                        In the heart of Tuscany, where the hills roll like a slow-moving sea of gold and emerald, lies a silence that speaks. It is not an absence of sound, but a presence of peace.
+                    </p>
+<div class="prose prose-lg text-on-surface leading-loose">
+<p>To walk through the Val d'Orcia is to step into a Renaissance painting. Every cypress tree seems placed with intentionality, every farmhouse positioned to capture the perfect slant of the afternoon sun. The air here tastes of dust, wild rosemary, and history.</p>
+<!-- Layered Image 1 -->
+<div class="relative my-16 group">
+<div class="absolute -inset-4 bg-primary-fixed opacity-10 rounded-lg -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+<img class="relative z-10 rounded-lg shadow-xl w-full object-cover aspect-[4/3]" data-alt="rolling green hills of tuscany at sunrise with misty valleys and tall cypress trees lining a winding dirt road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn97ASFv02hG-x-BiIddq2KFP_kbjela6gtPs_AqvwaWySE90nvrZvR7rMcx9NTHtELY6XPttWk1cFBSlZ_von36koI4LRXtN0sURL2OUYvPhh5DXBAkbpX_gRb0bH1j7tOM3boyMpc8BsuPgmZsCIa3Z5L82uiGvbQvd_ZKnLaeHEsowc2kMRxkyxbjYFKOMPE6SOMm7tGxNd_Ux45r4cakLp0Q3G3V-rY-68VlsvuLZ-DQtqdVMYcwH9SV-qg7psXmk7MIgyhSYX"/>
+<div class="absolute -bottom-6 -right-6 w-1/2 rounded-lg overflow-hidden shadow-2xl z-20 border-4 border-surface-container-lowest hidden md:block">
+<img class="w-full aspect-square object-cover" data-alt="close up of rustic italian architecture with terracotta tiles and blooming purple bougainvillea vines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrpoFktmFaMycz3lkCm24_Kl8py6wge47Z97Tf4E4tRZhec0j8uZadlVptvE1Ftkt7kmp9M_t30hSL8OCHmn6bsSBe_E73VCo2GDY9xWAEjah1a3VFwDkDSSTtjxVYh3uZiDN6_pV4YlppvWUrp1pBQcpNnrg4zk7l3joL2oqC7-jFTar2Mg4EGMqRpnxuwahC1N03Spzm51dOIP-I4BM_IW__myXamURBz9ctIn8_6o9fsCa6wsvgM3ZbJU9CU-bMedIuYOMCMGxF"/>
+</div>
+</div>
+<p>We arrived at Pienza as the bells of the Duomo were striking four. The town, envisioned as an "ideal city" by Pope Pius II, remains a testament to the human desire for symmetry and beauty. As I sat on the stone wall overlooking the valley, the shadows of the clouds raced across the wheat fields below, creating a flickering mosaic of light.</p>
+<h2 class="text-3xl font-bold text-primary mt-12 mb-6">The Alchemy of Sunlight</h2>
+<p>What defines this region is the light. It has a physical weight to it—a golden syrup that pours over the landscape in the final hours of the day. Photographers call it the 'golden hour', but in Tuscany, it feels more like an eternal promise.</p>
+</div>
+</div>
+<!-- Side Info/Gallery Bento -->
+<aside class="md:col-span-4 space-y-6">
+<div class="p-8 rounded-lg bg-surface-container-low">
+<h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4">The Curator's Tip</h3>
+<p class="text-sm text-on-surface mb-6">"Visit the chapel of Vitaleta at exactly 6:45 PM. The light hits the facade in a way that makes the stone appear to glow from within."</p>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full uppercase tracking-tighter">Photography</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full uppercase tracking-tighter">Slow Travel</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded-lg aspect-square object-cover hover:scale-105 transition-transform duration-500" data-alt="detailed close up of fresh italian pasta with herbs and olive oil on a ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs0sxzfLODQyqz_GNl24NnBZ5Mhk7ywUE_5Hg21ClIeHNguRNLJMjuFy-EQGVy_vV5ld3ctJdtRjx5_SQ6F-sqGEWNVAREmrbvcmQAn5b8lCE--byp5cI1tmII1LGI0C93z3kcqGZXGs0NnCFapmeVDWKCfCFRUzTwWT2VBtsOhBu0FFRZr3MoHxiYtvXTks0yLe4nKLjjhB2ETa2JlDFHYKcnL408eno9Nr7E37MXLDd4QqNSqOwXFy9kr7kUuIBXyrUBwIafq8B0"/>
+<img class="rounded-lg aspect-square object-cover hover:scale-105 transition-transform duration-500" data-alt="old wooden window with green shutters overlooking a narrow italian cobblestone street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDEPq0zHHFn9ETzvhoOojZG6A0zQdb8zJwidfGCO1jbZDUqv7Gsaeyaz4DdEBEEYFDfX_xKV2YkxEaedCmYTL8zxIYp7-YuRO4HdK4Am7hGITYtDsiDkfrw8sDzvyAVut0IsWkIZRhwENImvmXQxBgu25wUlrIApzOI2OFIwD0jXugDs0daetf0y4LZpYGRnomBanTihfnq7PQSV743Grxh1ZOmPDmBx5v1xp8bbUg0kjNqDmPH7skpGm7MlzBOxaeKMQuc5BGmuJP"/>
+</div>
+</aside>
+</div>
+</article>
+<!-- Comments Section -->
+<section class="mt-24 border-t border-outline-variant/20 pt-16">
+<div class="flex items-center justify-between mb-12">
+<h3 class="text-2xl font-bold text-primary">Voices of the Community</h3>
+<span class="text-sm font-medium text-on-surface-variant">14 Comments</span>
+</div>
+<div class="space-y-6 max-w-3xl">
+<!-- Inset Comment Card -->
+<div class="p-6 rounded-lg bg-surface-container-low shadow-inner border border-outline-variant/10">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-8 h-8 rounded-full bg-primary-fixed-dim flex items-center justify-center text-on-primary-fixed text-[10px] font-bold">ML</div>
+<span class="text-sm font-bold">Marco L.</span>
+<span class="text-[11px] text-on-surface-variant ml-auto">2 days ago</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-sm">This perfectly captures why I return to Tuscany every year. There is a specific frequency to the wind in Val d'Orcia that you can't find anywhere else. Beautifully written.</p>
+</div>
+<div class="p-6 rounded-lg bg-surface-container-low shadow-inner border border-outline-variant/10 ml-8">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed-dim flex items-center justify-center text-on-secondary-fixed text-[10px] font-bold">SK</div>
+<span class="text-sm font-bold">Sarah King</span>
+<span class="text-[11px] text-on-surface-variant ml-auto">1 day ago</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-sm">Going there next month! Adding Vitaleta at 6:45 PM to my itinerary immediately.</p>
+</div>
+<div class="mt-8 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-outline" data-icon="edit_note">edit_note</span>
+</div>
+<input class="bg-transparent border-none focus:ring-0 w-full text-sm font-medium text-on-surface-variant" placeholder="Share your own story..." type="text"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-full text-xs font-bold hover:bg-primary-container transition-colors">Post</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Social Actions Floating Bar -->
+<div class="fixed bottom-10 left-1/2 -translate-x-1/2 z-50">
+<div class="bg-white/70 backdrop-blur-3xl rounded-full shadow-[0_20px_60px_rgba(0,32,26,0.2)] border border-white/40 flex items-center px-2 py-2 gap-1">
+<button class="flex items-center gap-2 px-6 py-3 rounded-full hover:bg-emerald-100/30 text-emerald-900 transition-all group">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="favorite">favorite</span>
+<span class="text-xs font-bold tracking-tight">1.2k</span>
+</button>
+<div class="w-[1px] h-6 bg-outline-variant/30"></div>
+<button class="flex items-center gap-2 px-6 py-3 rounded-full hover:bg-emerald-100/30 text-emerald-900 transition-all group">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-xs font-bold tracking-tight">14</span>
+</button>
+<div class="w-[1px] h-6 bg-outline-variant/30"></div>
+<button class="flex items-center gap-2 px-6 py-3 rounded-full hover:bg-emerald-100/30 text-emerald-900 transition-all group">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="share">share</span>
+</button>
+<div class="w-[1px] h-6 bg-outline-variant/30"></div>
+<button class="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white transition-all hover:scale-105 active:scale-95 shadow-lg">
+<span class="material-symbols-outlined text-[20px]" data-icon="bookmark">bookmark</span>
+<span class="text-xs font-bold tracking-tight">Save</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl w-[90%] max-w-md mx-auto rounded-full px-6 py-3 shadow-[0_20px_40px_rgba(0,32,26,0.15)]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-emerald-900 to-emerald-700 dark:from-emerald-600 dark:to-emerald-400 text-white rounded-full px-5 py-2.5 shadow-lg scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Journals</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Create</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

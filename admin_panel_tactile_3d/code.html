@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Curator Admin Panel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {},
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .plus-jakarta { font-family: 'Plus_Jakarta_Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+        .depth-card {
+            box-shadow: 0 20px 40px rgba(0, 32, 26, 0.08), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-emerald-50/30 text-emerald-950 min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_20px_40px_rgba(0,32,26,0.08)] flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-emerald-900 dark:text-emerald-50 hover:bg-emerald-100/50 dark:hover:bg-emerald-800/50 transition-all duration-300 p-2 rounded-full active:scale-95 transition-transform duration-200">menu</button>
+<h1 class="text-xl font-black tracking-tighter text-emerald-900 dark:text-emerald-50 font-['Plus_Jakarta_Sans']">CURATOR</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-emerald-900 dark:text-emerald-50 font-bold font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Overview</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:bg-emerald-100/50 dark:hover:bg-emerald-800/50 px-3 py-1 rounded-lg transition-all duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#">Users</a>
+<a class="text-emerald-800/60 dark:text-emerald-200/60 hover:bg-emerald-100/50 dark:hover:bg-emerald-800/50 px-3 py-1 rounded-lg transition-all duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#">Places</a>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-200 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a male curator administrator in a bright office environment with soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLay7V9kefCK3Khrf8AF3QoF176p31DjTaYDjj3c9SVAurGLN4U9J-K5yEyvPkVlZssMf2QB4uJfidgAAO3rfR8KGT21DtlLrjk--AfQ0ndKZUckaTceGyi0ioNlAzyq8t9pvrPX8Jto2GY81Ej1KyOtfDBSehm7gmIgJLPzPI-8jkcCw1KKrSt2nC_HXnhMJaJ4c5tSjT3eormyVTgtQijfjZvQlOPrQ9L1paAD8t1KHHR3YLNwb59O2AAUyzdL_du6V02zNe8_nH"/>
+</div>
+</div>
+</header>
+<main class="pt-28 pb-32 px-6 max-w-7xl mx-auto">
+<!-- 3D Stats Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+<div class="md:col-span-2 glass-card rounded-[2rem] p-8 depth-card flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<p class="text-emerald-600 font-bold uppercase tracking-widest text-xs mb-2">Total Engagement</p>
+<h2 class="text-4xl font-black text-emerald-950 font-['Plus_Jakarta_Sans'] tracking-tight">284.5k</h2>
+<div class="flex items-center gap-2 mt-4 text-emerald-600 font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+12.5% this month</span>
+</div>
+</div>
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-gradient-to-br from-emerald-100 to-transparent rounded-full blur-3xl opacity-50 group-hover:scale-125 transition-transform duration-700"></div>
+<div class="mt-8 h-24 flex items-end gap-1">
+<div class="flex-1 bg-emerald-200 h-[40%] rounded-t-lg"></div>
+<div class="flex-1 bg-emerald-300 h-[60%] rounded-t-lg"></div>
+<div class="flex-1 bg-emerald-400 h-[85%] rounded-t-lg"></div>
+<div class="flex-1 bg-emerald-600 h-[70%] rounded-t-lg"></div>
+<div class="flex-1 bg-emerald-700 h-[95%] rounded-t-lg"></div>
+<div class="flex-1 bg-emerald-900 h-[100%] rounded-t-lg"></div>
+</div>
+</div>
+<div class="glass-card rounded-[2rem] p-8 depth-card flex flex-col justify-between hover:scale-[1.02] transition-transform duration-500">
+<div>
+<div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-900 mb-6">
+<span class="material-symbols-outlined">person_add</span>
+</div>
+<p class="text-emerald-800/60 font-semibold text-sm">New Journals</p>
+<h3 class="text-3xl font-bold text-emerald-950 font-['Plus_Jakarta_Sans']">1,240</h3>
+</div>
+<div class="text-emerald-500 text-xs font-bold mt-4">+4% weekly</div>
+</div>
+<div class="glass-card rounded-[2rem] p-8 depth-card flex flex-col justify-between bg-emerald-900 text-emerald-50 hover:scale-[1.02] transition-transform duration-500">
+<div>
+<div class="w-12 h-12 bg-emerald-800 rounded-2xl flex items-center justify-center text-emerald-100 mb-6">
+<span class="material-symbols-outlined">explore</span>
+</div>
+<p class="text-emerald-100/60 font-semibold text-sm">Active Spots</p>
+<h3 class="text-3xl font-bold font-['Plus_Jakarta_Sans']">8,422</h3>
+</div>
+<div class="text-emerald-300 text-xs font-bold mt-4">Across 42 cities</div>
+</div>
+</section>
+<!-- Elevated User Table -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-black text-emerald-900 font-['Plus_Jakarta_Sans'] tracking-tight">Active Curators</h2>
+<button class="bg-emerald-900 text-white px-6 py-2.5 rounded-full font-bold text-sm flex items-center gap-2 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-lg">add</span>
+                    Invite User
+                </button>
+</div>
+<div class="space-y-4">
+<!-- Table Row 1 -->
+<div class="glass-card rounded-2xl p-4 flex items-center justify-between depth-card hover:bg-white transition-colors duration-300">
+<div class="flex items-center gap-4 flex-1">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a creative professional woman with a warm smile in a minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgAdirsHu_kuTj3rYcB7zfHNiG4bP89sW15ayqD0BXslTvLv1t4dOmBsFFhxfElfuj4CtrlyDvuIUF_GkBCmMJAdJ8dKsDf80qcMn_8F3POHkMjt6bws0cVsVxaYd_P9bVSidjoH5enC9Xhe_jECFV_ETnewgmdOTOvlEcXjvNwJOWY9OB61QqEPj5Wqq9uqz6LNy-hQWjixXId5DIL7XRbStrRShyOq22X-QSnNJaePPuq0AogWU8_chU00zdkAbRs4vUXHnv-u_g"/>
+<div>
+<p class="font-bold text-emerald-950">Elena Rodriguez</p>
+<p class="text-sm text-emerald-600/70">elena.r@curator.io</p>
+</div>
+</div>
+<div class="hidden md:block flex-1">
+<span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase tracking-wider rounded-full">Editor</span>
+</div>
+<div class="hidden md:block flex-1">
+<p class="text-sm font-semibold text-emerald-900">42 Journals</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-emerald-400 hover:text-emerald-900 transition-colors"><span class="material-symbols-outlined">edit</span></button>
+<button class="p-2 text-emerald-400 hover:text-red-600 transition-colors"><span class="material-symbols-outlined">delete</span></button>
+</div>
+</div>
+<!-- Table Row 2 -->
+<div class="glass-card rounded-2xl p-4 flex items-center justify-between depth-card hover:bg-white transition-colors duration-300">
+<div class="flex items-center gap-4 flex-1">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="modern masculine professional portrait with soft lighting and neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1QqudFKAvRo1-IjQmbX0dg0krbRq2RmcGttpO6v5m3OlsNyqh5vxmcCqIJ0uV3WSrHTGnlI3aREAfFBlyumUS36Ple7hLD-AnuBDyEDbCrAVpj06tyfMBaQ2l-qqoO1PVUoml7y5fAPg-1mEGP5BAlf4H_DePnsdzqdoDWjOmL7XI0dUOEB3ED2GrBg-HnIQkTdFygjKAHQGWDNr5k-OhbvWZn2lgf9s_0N11DtZtyQX7Yqc3_03sieVV4lpIDrP0WYLGf69jNKcC"/>
+<div>
+<p class="font-bold text-emerald-950">Marcus Chen</p>
+<p class="text-sm text-emerald-600/70">m.chen@design.co</p>
+</div>
+</div>
+<div class="hidden md:block flex-1">
+<span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase tracking-wider rounded-full">Contributor</span>
+</div>
+<div class="hidden md:block flex-1">
+<p class="text-sm font-semibold text-emerald-900">18 Journals</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-emerald-400 hover:text-emerald-900 transition-colors"><span class="material-symbols-outlined">edit</span></button>
+<button class="p-2 text-emerald-400 hover:text-red-600 transition-colors"><span class="material-symbols-outlined">delete</span></button>
+</div>
+</div>
+<!-- Table Row 3 -->
+<div class="glass-card rounded-2xl p-4 flex items-center justify-between depth-card hover:bg-white transition-colors duration-300">
+<div class="flex items-center gap-4 flex-1">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="successful business woman portrait in a modern architectural space with glass reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtVd4hAhUJuMaPAp_He9mEJIu-AZzEtOumScs2rAVqtAw7gMw9lX8yYtY3jh1-lvu6PC5eAt3P8A2xUoL6wQvxLzgtFyARpGj12zm96nnVcbqFNgspfJLQ-c1qSgDBC7k9vtcDMY6ZYPulp3axPbaqp4JevUu4OLp5XlRJY0gKQDtDqhvTvKCnyfG41FoFOtKnBd3TzL2TxNYqB4VHePeR0APEEYl29jE4AQltuKrbhCSy9Nwuyf1GrhB9PxJcmEZG4NuUm6b0PDLB"/>
+<div>
+<p class="font-bold text-emerald-950">Sarah Jenkins</p>
+<p class="text-sm text-emerald-600/70">sarah@curator.io</p>
+</div>
+</div>
+<div class="hidden md:block flex-1">
+<span class="px-3 py-1 bg-emerald-900 text-white text-[10px] font-black uppercase tracking-wider rounded-full">Admin</span>
+</div>
+<div class="hidden md:block flex-1">
+<p class="text-sm font-semibold text-emerald-900">156 Journals</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-emerald-400 hover:text-emerald-900 transition-colors"><span class="material-symbols-outlined">edit</span></button>
+<button class="p-2 text-emerald-400 hover:text-red-600 transition-colors"><span class="material-symbols-outlined">delete</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Manage Posts & Places Asymmetric Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<h3 class="text-xl font-black text-emerald-900 font-['Plus_Jakarta_Sans'] tracking-tight">Recent Postings</h3>
+<div class="glass-card rounded-[2rem] p-6 depth-card group cursor-pointer overflow-hidden">
+<div class="aspect-[16/9] rounded-2xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="majestic misty mountains at dawn with soft ethereal green and blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfgUQ2gs7mu38Km4ubebsw0_cSWRefYqLqlb81mTm02DNFi4U9bKTM7kQ7UqQSXT_MqhoxKG2Cd1O9UD8xrQQV5kqQsryl_5aQz8Dq6qPI-1frqGFvHsFcwOsVwIzbExb-yTCc9cTCTDlI1kw_44XjpvY7rnodsBQvmL_y4_9ocY5srjLbqTrYNoSsIW7YfnTq3AivVst5UUOoxnHHfZ6Y_Tp1XiQwDf478wGJHJp8-0xqXgPMMCmxPB9XMEvZXoMt5tGgQJDbkqW4"/>
+<div class="absolute top-4 right-4 bg-emerald-900/40 backdrop-blur-md text-white text-[10px] px-3 py-1 rounded-full font-bold">TRAVEL</div>
+</div>
+<h4 class="font-bold text-lg text-emerald-950">Hidden Valleys of the North</h4>
+<p class="text-sm text-emerald-800/60 mt-1 line-clamp-2">Exploring the untouched landscapes where the mountains meet the clouds in a spectacular dance of nature.</p>
+<div class="flex items-center justify-between mt-6 border-t border-emerald-100 pt-4">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-emerald-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-emerald-300"></div>
+</div>
+<span class="text-xs font-bold text-emerald-600">Review Required</span>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-xl font-black text-emerald-900 font-['Plus_Jakarta_Sans'] tracking-tight">Verified Places</h3>
+<div class="space-y-4">
+<div class="glass-card rounded-2xl p-4 flex items-center gap-4 depth-card group hover:bg-emerald-900 hover:text-white transition-all duration-300">
+<div class="w-16 h-16 rounded-xl bg-emerald-100 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="architectural view of a modern suspension bridge against a bright clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAPX8l3Mq4U8e4ICIu_K57Y6nW1z-QwTi4_lfOUV8v6gnNczEH4M7XgDv_zLmE70EYSD5Sf6NnuIr38_lNjvRXO-sgA5Mw43WNtpw5c-XKAZY5CglvIfAarBzbRqK4xJf6wdSygqJME7sT6ieaUJ1HBsRtgw9MYk75aRuOFz4CZ3ApxKL-uP7xetbbUKpm3oxUx1SAtNwG4deyr7_FLLMFEKx20tPbEOP-cTQ-LkoH6OpKES0ktNmqdhFkZdVHbiwjG8CB5s4YdbEi"/>
+</div>
+<div class="flex-1">
+<p class="font-bold">Golden Gate Park</p>
+<p class="text-xs text-emerald-600/70 group-hover:text-emerald-100/70" data-location="San Francisco">San Francisco, CA</p>
+</div>
+<span class="material-symbols-outlined text-emerald-400 group-hover:text-emerald-100">verified</span>
+</div>
+<div class="glass-card rounded-2xl p-4 flex items-center gap-4 depth-card group hover:bg-emerald-900 hover:text-white transition-all duration-300">
+<div class="w-16 h-16 rounded-xl bg-emerald-100 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="luxury boutique hotel facade with elegant evening lighting and lush tropical plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApFwOUsgzTNSTfx2rYhq763JjlNAjMTxXTNUe3QrJE_KzjZcs1_QSosvmYjbO-N4FAH4iOgxepBi0FWvLT_qav59ck60n06o9mqsxe4zhcBKnVnWNRr3M8iJ_uFReGc-Z-4HTkDbO9j4uxXv60Z49QSBviTmFU85ccVO_K4lumcp6HOEWXbSUEvh9Qn93HjYfSDSpy6JIF9EFM5Y8CZq2iqMus_X7zptXWNuF_PuZ-if5Hn4k0IylCLA5KLzxNjEBhMk-R_zQpst7M"/>
+</div>
+<div class="flex-1">
+<p class="font-bold">L'Avenue Boutique</p>
+<p class="text-xs text-emerald-600/70 group-hover:text-emerald-100/70" data-location="Paris">Paris, France</p>
+</div>
+<span class="material-symbols-outlined text-emerald-400 group-hover:text-emerald-100">verified</span>
+</div>
+<div class="glass-card rounded-2xl p-4 flex items-center gap-4 depth-card group hover:bg-emerald-900 hover:text-white transition-all duration-300">
+<div class="w-16 h-16 rounded-xl bg-emerald-100 overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="modern minimalist cafe interior with wooden furniture and soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYgBvO3oNXa9ZZjLkmS47LhkLJGpguMWkuGwPdVROEKif3dIZcjso8R3_YLEf6K4K-5tA-G-YICY1CnF6zfSahL8HZYMD1TfTp_UM2pVHJoCSGxLON3F8jJhecgTVox2IbpW8J8BkXNtikAFC_bUx2BFkIirvViEAN3zjmDQneB7sG3saTZzYqahk7pr3YOfgPc0Blvx7Ai2Or73J_PWOf6aMdH4FBJxHzyPkbaNuUjtneb4w5yhEUAZH2gnR8I_32qb8tiPyznJpQ"/>
+</div>
+<div class="flex-1">
+<p class="font-bold">The Green Bean</p>
+<p class="text-xs text-emerald-600/70 group-hover:text-emerald-100/70" data-location="Kyoto">Kyoto, Japan</p>
+</div>
+<span class="material-symbols-outlined text-emerald-400 group-hover:text-emerald-100">verified</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Visible on Mobile) -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center md:hidden">
+<div class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full px-6 py-3 shadow-[0_20px_40px_rgba(0,32,26,0.15)] flex justify-around items-center">
+<!-- Explore (Active) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-emerald-900 to-emerald-700 dark:from-emerald-600 dark:to-emerald-400 text-white rounded-full px-5 py-2.5 shadow-lg scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-0.5">Explore</span>
+</a>
+<!-- Journals -->
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-0.5">Journals</span>
+</a>
+<!-- Create -->
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-0.5">Create</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest mt-0.5">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

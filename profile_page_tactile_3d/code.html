@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {},
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-emerald-50 text-emerald-900 min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_20px_40px_rgba(0,32,26,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-emerald-900 hover:bg-emerald-100/50 transition-all duration-300 p-2 rounded-full active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-black tracking-tighter text-emerald-900 font-['Plus_Jakarta_Sans'] uppercase">CURATOR</h1>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-emerald-200 active:scale-95 transition-transform duration-200 cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="Portrait of a professional man with a friendly expression in a modern studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt8YM17EiJJXvn5HG8Uu5kl-MKfTFSkbL8wXbVbD6xKQsQMKsmxAKfUB_4zpe2wsqldh4XR67ts1ADtIu9f0iuwHWAfxpBKcotLy6jieEZD3Lz3P60dh0s-nM-kUFoAN7Us1YjsUhOeyDtL0xQqcEJM6T56mMDPFuZDV4KaOJGoILa8XAL51XsNpQXXZoRxDqSOh9StJuswZnsMD_vzaKrrCQ_Aa4d1Rnr3w4-83RGkzbkO_nj0hV5wpROi7tu26EN7W5Z9b2yA7GU"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<!-- Hero Section: Avatar & Profile Info -->
+<section class="flex flex-col items-center mb-12">
+<div class="relative mb-6">
+<!-- 3D Ring Effect -->
+<div class="absolute -inset-4 bg-gradient-to-tr from-emerald-600 via-emerald-200 to-emerald-500 rounded-full blur-sm opacity-30"></div>
+<div class="absolute -inset-2 bg-gradient-to-br from-emerald-400 to-emerald-700 rounded-full shadow-[0_15px_30px_rgba(6,78,59,0.3)]"></div>
+<div class="relative h-32 w-32 rounded-full p-1 bg-white">
+<img class="w-full h-full rounded-full object-cover border-4 border-white" data-alt="Close-up portrait of a male curator, high-quality studio lighting, sharp focus, vibrant skin tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8gvd83w9hpb9QJgc6R3PDfA_VXNBT5ysuhvKnhBgGMlESypE8iQ8lGVvgsUYHrBsW6uGNWMqT1poFxGA0LM9G7zRU04nN5biIOTG0bvBGprTbe2D1EzBwsB77ckDpkdWh5DOdhHgsck-gdWfwGLJIwpoBggMTvmTUUwlWHmRDL4i9t3eWw9m4dHFywRZumWT8D0M4sco7RMpT_LZ6mI4jutFae3upEZe-9VILO438NdlR_nzkzSmmdFFA_4QLU1CtfGsftVlAx-6P"/>
+</div>
+<div class="absolute bottom-0 right-0 h-10 w-10 bg-emerald-600 rounded-full border-4 border-emerald-50 flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="text-center mb-8">
+<h2 class="text-3xl font-extrabold tracking-tight text-emerald-950 font-['Plus_Jakarta_Sans'] mb-1">Alex Sterling</h2>
+<p class="text-emerald-800/70 font-medium tracking-wide">Visual Storyteller &amp; Digital Archivist</p>
+<p class="text-emerald-700/60 text-sm mt-2 max-w-sm">Curating the intersection of brutalist architecture and mid-century modern aesthetics.</p>
+</div>
+<!-- Edit Profile Button with strong 3D shadow -->
+<button class="bg-emerald-900 text-white px-8 py-3 rounded-2xl font-bold tracking-tight shadow-[0_12px_24px_-8px_rgba(6,78,59,0.6)] active:shadow-[0_4px_8px_-2px_rgba(6,78,59,0.6)] active:translate-y-1 transition-all duration-200 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">edit</span>
+                Edit Profile
+            </button>
+</section>
+<!-- Stats Grid: High Depth Cards -->
+<section class="grid grid-cols-3 gap-4 mb-12">
+<div class="bg-white rounded-3xl p-6 shadow-[0_20px_40px_rgba(0,32,26,0.06)] border border-emerald-100/50 flex flex-col items-center justify-center">
+<span class="text-2xl font-black text-emerald-900">12.4k</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-emerald-800/40 mt-1">Curators</span>
+</div>
+<div class="bg-white rounded-3xl p-6 shadow-[0_20px_40px_rgba(0,32,26,0.06)] border border-emerald-100/50 flex flex-col items-center justify-center">
+<span class="text-2xl font-black text-emerald-900">842</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-emerald-800/40 mt-1">Journals</span>
+</div>
+<div class="bg-white rounded-3xl p-6 shadow-[0_20px_40px_rgba(0,32,26,0.06)] border border-emerald-100/50 flex flex-col items-center justify-center">
+<span class="text-2xl font-black text-emerald-900">92</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em] text-emerald-800/40 mt-1">Collections</span>
+</div>
+</section>
+<!-- My Posts: Bento Feed -->
+<section>
+<div class="flex items-center justify-between mb-6 px-2">
+<h3 class="text-sm font-black uppercase tracking-widest text-emerald-900/60">My Journals</h3>
+<div class="flex gap-2">
+<button class="p-2 text-emerald-900 bg-emerald-100 rounded-xl"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="p-2 text-emerald-900/40"><span class="material-symbols-outlined">view_agenda</span></button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+<!-- Tactile Card 1 -->
+<div class="group relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_15px_30px_rgba(0,32,26,0.1)] transition-all duration-500 hover:-translate-y-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern architectural building with geometric glass windows and sharp concrete lines under a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByssKDLpwLbG2jPSun5ITM54Xv4vJ0ynLZp1iO1heHMduaHij_6Lr5Rg5polyuJGnpKuAhAtbMhzDJiYEama0HoONIULQNmBv9LNAf3dPfaARK94f2YQe4itmrLMjK0UstcwNlJmwXcb2FeQwuqvY2_CGyGeSSzzsmg9asFVJKBeLuuAp-PK8XuhPGM_73IW32kEqUxau9vBdQF3mX5KW40EM-yk1tkgxTtuyTM4SvmAzznshlyrFH_iIGDfLD6Pxd-afg8s0VJJZ-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5">
+<span class="text-[9px] font-bold text-white/70 uppercase tracking-widest bg-emerald-900/40 backdrop-blur-md px-2 py-1 rounded-lg mb-2 inline-block">Architecture</span>
+<p class="text-white font-bold tracking-tight text-sm leading-tight">The Brutalist Echo in London</p>
+</div>
+</div>
+<!-- Tactile Card 2 -->
+<div class="group relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_15px_30px_rgba(0,32,26,0.1)] transition-all duration-500 hover:-translate-y-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist interior with a single designer chair and soft shadows falling on a neutral wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv6O8nI-5NiLV-3vvH0Inqt35hfCT6r9Mj06OBdZ7M_3UTle2gi4U711P8j6_LJ11B3aUx3-F4gBHkACXR8JV-38eKVkGQptnrJpkxDs2gIPGsvZAwo9FayKbdAk9ihHiF1_3byddiYPbH3oowHJBLmlcL81OoAVv9iCi0MZ-Im5qgsr_kojPiDAoxZhiTeSejoyZKR84VhOD3e1d97a6MemXDjINNo3FyQgoH0Je4oDHHtPA9B4ELn_2itJgEgrC77XE0SyZ1JR_1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5">
+<span class="text-[9px] font-bold text-white/70 uppercase tracking-widest bg-emerald-900/40 backdrop-blur-md px-2 py-1 rounded-lg mb-2 inline-block">Interior</span>
+<p class="text-white font-bold tracking-tight text-sm leading-tight">Less is Everything</p>
+</div>
+</div>
+<!-- Tactile Card 3 -->
+<div class="group relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_15px_30px_rgba(0,32,26,0.1)] transition-all duration-500 hover:-translate-y-2 md:col-span-1 col-span-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Vibrant tropical leaves with heavy contrast and rich green textures in a botanical garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl_ihlaB_SVdUKdxOYdTwG-ZAEJE6LvsaUetovASsFPVzSDXIfIk2z6WJs7UstwG0yAzujwYbTCdjn3NgeRhaVjnEDERJvfutG3DSaNB0RzjlSgXkP-zFhuA3dCEU7Der8ewfuy1FPI5gI316P9E34zD78DUmgUysOiq3z5iE5LiLFwmVWk_P6vDInaPK7IZJdvGHz3PjQ_3yElzwsL5qVgI51LQ0ovj3WY8rknjHBMZm5baU3mVyZiupdydgdtBYxAIOohDMeLoSt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5">
+<span class="text-[9px] font-bold text-white/70 uppercase tracking-widest bg-emerald-900/40 backdrop-blur-md px-2 py-1 rounded-lg mb-2 inline-block">Nature</span>
+<p class="text-white font-bold tracking-tight text-sm leading-tight">Botanical Deep Dive</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center">
+<div class="bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,32,26,0.15)] fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full px-6 py-3 flex justify-around items-center">
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Journals</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-900/50 dark:text-emerald-50/50 px-4 py-2 hover:scale-110 transition-transform duration-300 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1">add_circle</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Create</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-emerald-900 to-emerald-700 dark:from-emerald-600 dark:to-emerald-400 text-white rounded-full px-5 py-2.5 shadow-lg active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-0.5" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-widest">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>
